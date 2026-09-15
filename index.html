@@ -1,23 +1,1703 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+
+
+    <!-- Schema.org 통합 구조화 데이터 (LLM 크롤러 및 검색엔진 최적화) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://example.com/rangerover-suv-pricing-guide#webpage",
+          "url": "https://example.com/rangerover-suv-pricing-guide",
+          "name": "2026 랜지로버 SUV 가격표 및 모델별 트림 실구매가 견적 총정리",
+          "description": "2026년 기준 랜드로버 레인지로버 전 라인업(레인지로버 플래그십, 스포츠, 벨라, 이보크, SV)의 공식 출고 가격, 트림 등급표, 취등록세 계산 및 유지비 종합 분석",
+          "inLanguage": "ko-KR",
+          "datePublished": "2026-01-05T09:00:00+09:00",
+          "dateModified": "2026-03-15T14:30:00+09:00",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "홈",
+                "item": "https://example.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "수입 SUV 가격 분석",
+                "item": "https://example.com/suv-pricing"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "랜지로버 SUV 가격",
+                "item": "https://example.com/rangerover-suv-pricing-guide"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://example.com/#organization",
+          "name": "프리미엄 모빌리티 리서치 센터",
+          "url": "https://example.com",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "02-1588-0000",
+            "contactType": "고객센터"
+          }
+        },
+        {
+          "@type": "Car",
+          "@id": "https://example.com/rangerover-suv-pricing-guide#product",
+          "name": "2026 랜드로버 레인지로버 (Range Rover SUV)",
+          "brand": {
+            "@type": "Brand",
+            "name": "Land Rover"
+          },
+          "model": "Range Rover",
+          "vehicleConfiguration": "Full-size Luxury SUV, Mid-size SUV, Compact SUV",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "KRW",
+            "lowPrice": "75800000",
+            "highPrice": "345000000",
+            "offerCount": "24",
+            "priceValidUntil": "2026-12-31"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://example.com/rangerover-suv-pricing-guide#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "2026년 기준 랜지로버 SUV 가격 중 가장 접근하기 좋은 엔트리 모델의 시작 금액은 얼마인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2026년 랜드로버 라인업 중 레인지로버 배지를 단 가장 접근성 높은 모델은 레인지로버 이보크 P250 S 트림으로, 공식 출고 가격은 7,580만원부터 시작합니다. 미드사이즈 벨라는 1억 200만원대, 레인지로버 스포츠는 1억 5,400만원대, 플래그십 올 뉴 레인지로버 SWB 스탠다드 휠베이스 모델은 2억 2,500만원대부터 형성되어 있습니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "랜지로버 SUV 구입 시 발생하는 취등록세 및 부대비용 계산 방식은 어떻게 되나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "일반 승용차 취등록세율은 차량 공급가액의 7%가 적용됩니다. 2억 3,000만원 상당의 레인지로버 D350 오토바이오그래피 구입 시 취등록세는 약 1,610만원이 산출되며, 공채 할인(지역별 상이), 번호판대, 인지대, 첫해 자동차세(3,000cc 기준 약 78만원)와 200만원에서 400만원대의 1년 자동차보험료를 합산하면 초기 부대비용으로 약 2,100만원 내외가 추가로 소요됩니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "운용리스 및 장기렌트 진행 시 위약금과 중도해지 정산 조건은 어떻게 설정되나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "통상 12개월(1년) 단위 또는 36개월, 60개월 약정으로 체결되는 운용리스는 잔여 약정 기간과 차량 잔존가치에 따라 중도해지 손해배상금(위약금)이 차등 적용됩니다. 일반적으로 남은 리스료의 10%에서 최대 35%가 위약금으로 부과되므로 승계 업체를 통해 리스 승계를 진행하거나 계약 전 환불 및 정산 규정을 전문 컨설팅 센터에서 확인하는 것이 현명합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "온라인 커뮤니티(보배드림, 펨코, 디시)에서 언급되는 레인지로버 할인 성지 및 좌표 이용 시 주의사항은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "커뮤니티 내돈내산 후기나 좌표 게시글 중 과도한 비공식 캐시백이나 현금지원, 1,500만원 이상의 무조건적 즉시 할인을 내세우는 일부 미인증 대행업체는 금융 상품(고금리 할부/리스)을 강제하거나 계약금 환불 지연 문제를 유발할 수 있습니다. 공식 딜러십 전시장의 정식 카마스터를 통해 계약서를 작성하고 서비스 바우처, 보증연장 상품권 등의 공식 혜택을 수령해야 안전합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "레인지로버 플러그인 하이브리드(PHEV) P550e와 마일드 하이브리드 가솔린 P530의 차이점은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "P550e는 3.0리터 직렬 6기통 인제니움 가솔린 엔진에 38.2kWh 대용량 배터리를 결합하여 1회 충전 시 순수 전기 모드로 약 100km 이상 주행이 가능하며 복합 최고출력 550마력을 발휘합니다. 반면 P530은 4.4리터 V8 트윈터보 엔진을 탑재하여 530마력의 풍부한 배기음과 즉각적인 펀치력을 제공하는 정통 대배기량 럭셔리 트림이라는 차이점이 있습니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+      :root {
+        --brand-deep: #162B22;
+        --brand-forest: #244637;
+        --brand-sage: #4E6E5D;
+        --brand-sand: #C5A880;
+        --brand-champagne: #EFE9E0;
+        --brand-warm-bg: #F8F9F8;
+        --surface-white: #FFFFFF;
+        --text-headline: #111A16;
+        --text-body: #2B3832;
+        --text-muted: #5B6B63;
+        --border-subtle: #D8E0DC;
+        --border-accent: #B28E5C;
+        --highlight-box: #EEF4F0;
+        --table-alt: #F3F6F4;
+        --cta-accent: #8E4E2C;
+        --cta-hover: #753F23;
+        --shadow-soft: 0 4px 20px rgba(22, 43, 34, 0.06);
+        --shadow-elevated: 0 12px 32px rgba(22, 43, 34, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+        background-color: var(--brand-warm-bg);
+        color: var(--text-body);
+        line-height: 1.85;
+        font-size: 17px;
+        letter-spacing: -0.02em;
+        word-break: keep-all;
+      }
+
+      a {
+        color: var(--brand-forest);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      a:hover {
+        color: var(--border-accent);
+        text-decoration: underline;
+      }
+
+      .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* 헤더 */
+      header.site-header {
+        background-color: var(--brand-deep);
+        color: var(--surface-white);
+        padding: 28px 0;
+        border-bottom: 2px solid var(--brand-sand);
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo-title {
+        font-size: 1.75rem;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        color: var(--brand-champagne);
+      }
+
+      .logo-title span {
+        color: var(--brand-sand);
+        font-weight: 400;
+        font-size: 1.1rem;
+        margin-left: 8px;
+      }
+
+      .top-meta-nav {
+        font-size: 0.9rem;
+        color: #B5C4BC;
+      }
+
+      /* 브레드크럼 */
+      .breadcrumb-bar {
+        background-color: var(--surface-white);
+        border-bottom: 1px solid var(--border-subtle);
+        padding: 12px 0;
+        font-size: 0.88rem;
+        color: var(--text-muted);
+      }
+
+      .breadcrumb-bar ol {
+        list-style: none;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .breadcrumb-bar li+li:before {
+        content: "/";
+        margin-right: 8px;
+        color: var(--border-subtle);
+      }
+
+      /* 히어로 섹션 */
+      .hero-section {
+        background: linear-gradient(145deg, var(--brand-deep) 0%, var(--brand-forest) 65%, #2F5342 100%);
+        color: var(--surface-white);
+        padding: 85px 0 70px;
+        text-align: center;
+        border-bottom: 1px solid var(--brand-sand);
+      }
+
+      .hero-badge {
+        display: inline-block;
+        background-color: rgba(197, 168, 128, 0.2);
+        color: var(--brand-sand);
+        border: 1px solid var(--brand-sand);
+        padding: 6px 18px;
+        border-radius: 30px;
+        font-size: 0.88rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .hero-section h1 {
+        font-size: 3rem;
+        line-height: 1.25;
+        font-weight: 800;
+        margin-bottom: 24px;
+        color: var(--surface-white);
+      }
+
+      .hero-subtext {
+        font-size: 1.25rem;
+        max-width: 860px;
+        margin: 0 auto 35px;
+        color: #D3E0D8;
+        font-weight: 400;
+        line-height: 1.6;
+      }
+
+      .hero-quick-summary {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .summary-card {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(197, 168, 128, 0.35);
+        padding: 20px;
+        border-radius: 8px;
+        backdrop-filter: blur(4px);
+      }
+
+      .summary-card .model-name {
+        font-size: 0.95rem;
+        color: var(--brand-sand);
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+
+      .summary-card .model-price {
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: var(--surface-white);
+      }
+
+      .summary-card .model-tag {
+        font-size: 0.8rem;
+        color: #AEC2B6;
+        margin-top: 4px;
+      }
+
+      /* 본문 레이아웃 */
+      .main-content {
+        padding: 60px 0;
+      }
+
+      .content-block {
+        background-color: var(--surface-white);
+        border-radius: 12px;
+        padding: 55px;
+        margin-bottom: 45px;
+        box-shadow: var(--shadow-soft);
+        border: 1px solid var(--border-subtle);
+      }
+
+      .content-block h2 {
+        font-size: 2.1rem;
+        color: var(--brand-deep);
+        font-weight: 800;
+        margin-bottom: 28px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid var(--brand-forest);
+        letter-spacing: -0.03em;
+      }
+
+      .content-block h3 {
+        font-size: 1.55rem;
+        color: var(--brand-forest);
+        font-weight: 700;
+        margin-top: 45px;
+        margin-bottom: 20px;
+        padding-left: 14px;
+        border-left: 4px solid var(--brand-sand);
+      }
+
+      .content-block h4 {
+        font-size: 1.25rem;
+        color: var(--text-headline);
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 14px;
+      }
+
+      .content-block p {
+        margin-bottom: 22px;
+        color: var(--text-body);
+        font-size: 1.05rem;
+        line-height: 1.9;
+      }
+
+      .lead-text {
+        font-size: 1.18rem;
+        font-weight: 500;
+        color: var(--brand-deep);
+        background-color: var(--highlight-box);
+        padding: 24px;
+        border-radius: 8px;
+        border-left: 4px solid var(--brand-forest);
+        margin-bottom: 30px;
+      }
+
+      /* 표 디자인 */
+      .table-wrapper {
+        overflow-x: auto;
+        margin: 28px 0;
+        border: 1px solid var(--border-subtle);
+        border-radius: 8px;
+      }
+
+      table.luxury-data-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 0.96rem;
+      }
+
+      table.luxury-data-table th {
+        background-color: var(--brand-deep);
+        color: var(--brand-champagne);
+        padding: 16px 18px;
+        font-weight: 600;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        white-space: nowrap;
+      }
+
+      table.luxury-data-table th:last-child {
+        border-right: none;
+      }
+
+      table.luxury-data-table td {
+        padding: 15px 18px;
+        border-bottom: 1px solid var(--border-subtle);
+        border-right: 1px solid var(--border-subtle);
+        color: var(--text-body);
+      }
+
+      table.luxury-data-table td:last-child {
+        border-right: none;
+      }
+
+      table.luxury-data-table tr:nth-child(even) {
+        background-color: var(--table-alt);
+      }
+
+      table.luxury-data-table tr:hover {
+        background-color: #EAF0EC;
+      }
+
+      .price-highlight {
+        font-weight: 700;
+        color: var(--cta-accent);
+      }
+
+      /* 시각적 차트/바 그래픽 (순수 CSS) */
+      .graph-container {
+        background: var(--surface-white);
+        border: 1px solid var(--border-subtle);
+        border-radius: 10px;
+        padding: 30px;
+        margin: 35px 0;
+      }
+
+      .graph-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--brand-deep);
+        margin-bottom: 8px;
+      }
+
+      .graph-subtitle {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        margin-bottom: 25px;
+      }
+
+      .bar-item {
+        margin-bottom: 20px;
+      }
+
+      .bar-label-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6px;
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+
+      .bar-track {
+        background-color: #E2E8E4;
+        height: 22px;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .bar-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--brand-forest), var(--brand-sand));
+        border-radius: 12px;
+      }
+
+      /* 계산기 시뮬레이터 인터페이스 */
+      .calculator-box {
+        background: linear-gradient(135deg, #F5F7F5 0%, #E9EFEA 100%);
+        border: 2px solid var(--brand-sand);
+        border-radius: 12px;
+        padding: 40px;
+        margin: 40px 0;
+      }
+
+      .calculator-box h3 {
+        margin-top: 0;
+        border-left: none;
+        padding-left: 0;
+        font-size: 1.6rem;
+        color: var(--brand-deep);
+        text-align: center;
+        margin-bottom: 12px;
+      }
+
+      .calc-subtext {
+        text-align: center;
+        color: var(--text-muted);
+        margin-bottom: 30px;
+        font-size: 0.98rem;
+      }
+
+      .calc-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-bottom: 30px;
+      }
+
+      .calc-form-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .calc-form-group label {
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: var(--text-headline);
+        font-size: 0.95rem;
+      }
+
+      .calc-form-group select,
+      .calc-form-group input {
+        padding: 14px 16px;
+        border: 1px solid var(--border-subtle);
+        border-radius: 8px;
+        font-size: 1rem;
+        background-color: var(--surface-white);
+        color: var(--text-headline);
+        outline: none;
+      }
+
+      .calc-form-group select:focus,
+      .calc-form-group input:focus {
+        border-color: var(--brand-forest);
+      }
+
+      .calc-btn {
+        background-color: var(--brand-forest);
+        color: var(--surface-white);
+        border: none;
+        padding: 16px 36px;
+        font-size: 1.15rem;
+        font-weight: 700;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.2s ease;
+      }
+
+      .calc-btn:hover {
+        background-color: var(--brand-deep);
+      }
+
+      .calc-result-display {
+        background-color: var(--surface-white);
+        border-radius: 10px;
+        padding: 28px;
+        margin-top: 30px;
+        border: 1px solid var(--border-subtle);
+      }
+
+      .calc-result-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        border-bottom: 1px dashed var(--border-subtle);
+        font-size: 1.05rem;
+      }
+
+      .calc-result-row.total-row {
+        border-bottom: none;
+        border-top: 2px solid var(--brand-forest);
+        padding-top: 18px;
+        margin-top: 8px;
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: var(--cta-accent);
+      }
+
+      /* 탭 네비게이션 */
+      .tab-navigation {
+        display: flex;
+        gap: 8px;
+        border-bottom: 2px solid var(--border-subtle);
+        margin: 30px 0 25px;
+      }
+
+      .tab-button {
+        background: none;
+        border: none;
+        padding: 14px 24px;
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--text-muted);
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        transition: all 0.2s;
+      }
+
+      .tab-button.active {
+        color: var(--brand-forest);
+        border-bottom-color: var(--brand-forest);
+        background-color: rgba(36, 70, 55, 0.05);
+        border-radius: 6px 6px 0 0;
+      }
+
+      .tab-panel {
+        display: none;
+      }
+
+      .tab-panel.active {
+        display: block;
+      }
+
+      /* 자주 묻는 질문 FAQ 스타일 */
+      .faq-accordion-group {
+        margin-top: 30px;
+      }
+
+      .faq-card {
+        border: 1px solid var(--border-subtle);
+        border-radius: 8px;
+        margin-bottom: 16px;
+        background-color: var(--surface-white);
+        overflow: hidden;
+      }
+
+      .faq-trigger {
+        width: 100%;
+        text-align: left;
+        background: none;
+        border: none;
+        padding: 22px 28px;
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--brand-deep);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .faq-trigger:hover {
+        background-color: var(--highlight-box);
+      }
+
+      .faq-toggle-state {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--brand-sand);
+        padding: 4px 10px;
+        background-color: var(--brand-deep);
+        border-radius: 4px;
+      }
+
+      .faq-body {
+        padding: 0 28px 24px;
+        font-size: 1.02rem;
+        color: var(--text-body);
+        line-height: 1.85;
+        border-top: 1px solid transparent;
+      }
+
+      .faq-body.open {
+        border-top-color: var(--border-subtle);
+        padding-top: 18px;
+      }
+
+      /* 외부 링크 박스 */
+      .reference-resource-box {
+        background-color: var(--highlight-box);
+        border-radius: 10px;
+        padding: 30px;
+        margin: 40px 0;
+        border: 1px solid #D2DFD8;
+      }
+
+      .reference-resource-box h3 {
+        margin-top: 0;
+        border-left: none;
+        padding-left: 0;
+        font-size: 1.25rem;
+        color: var(--brand-deep);
+        margin-bottom: 16px;
+      }
+
+      .reference-list {
+        list-style: none;
+      }
+
+      .reference-list li {
+        padding: 10px 0;
+        border-bottom: 1px solid #DFE7E3;
+        font-size: 0.98rem;
+      }
+
+      .reference-list li:last-child {
+        border-bottom: none;
+      }
+
+      /* 태그 클라우드 */
+      .tag-cloud {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 25px;
+      }
+
+      .tag-pill {
+        background-color: #E6EDE9;
+        color: var(--brand-forest);
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+
+      /* 푸터 */
+      footer.site-footer {
+        background-color: var(--brand-deep);
+        color: #B5C4BC;
+        padding: 60px 0 40px;
+        font-size: 0.92rem;
+        border-top: 3px solid var(--brand-sand);
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-grid h4 {
+        color: var(--brand-champagne);
+        margin-bottom: 16px;
+        font-size: 1.05rem;
+      }
+
+      .footer-links {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 8px;
+      }
+
+      .footer-links a {
+        color: #B5C4BC;
+      }
+
+      .footer-links a:hover {
+        color: var(--brand-sand);
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.85rem;
+      }
+
+      /* 반응형 */
+      @media (max-width: 900px) {
+        .hero-section h1 {
+          font-size: 2.2rem;
+        }
+        .hero-quick-summary {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .content-block {
+          padding: 30px 20px;
+        }
+        .calc-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .hero-quick-summary {
+          grid-template-columns: 1fr;
+        }
+        .hero-section h1 {
+          font-size: 1.85rem;
+        }
+        .hero-subtext {
+          font-size: 1.05rem;
+        }
+        .tab-navigation {
+          flex-direction: column;
+        }
+        .tab-button {
+          width: 100%;
+          text-align: left;
+        }
+      }
+    </style>
+</head>
+<body>
+
+    <!-- 사이트 헤더 -->
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo-title">
+                프리미엄 모빌리티 리서치 센터
+                <span>2026 럭셔리 SUV 가이드</span>
+            </div>
+            <div class="top-meta-nav">
+                고객지원 컨설팅 센터 1588-0000 | 최신 2026년 공시 요금표 반영
+            </div>
+        </div>
+    </header>
+
+    <!-- 내비게이션 브레드크럼 -->
+    <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+        <div class="container">
+            <ol>
+                <li><a href="/">홈</a></li>
+                <li><a href="/suv-pricing">수입 럭셔리 SUV 견적 분석실</a></li>
+                <li aria-current="page">2026 랜지로버 SUV 가격표 및 실구매가 계산</li>
+            </ol>
+        </div>
     </nav>
-    <main>
-      <h1>Home page</h1>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-badge">2026 MODEL YEAR LUXURY ANALYSIS</div>
+            <h1>2026 랜지로버 SUV 가격 및 트림별 실구매 견적 완벽 분석</h1>
+            <p class="hero-subtext">
+                올 뉴 레인지로버 플래그십부터 스포츠, 벨라, 이보크까지 랜드로버 전 라인업의 공식 출고 금액과 옵션 요금표, 취등록세 계산기, 프로모션 할인 혜택 및 운용리스·장기렌트 약정 가이드를 투명하게 제시합니다.
+            </p>
+
+            <div class="hero-quick-summary">
+                <div class="summary-card">
+                    <div class="model-name">레인지로버 플래그십 (SWB/LWB)</div>
+                    <div class="model-price">2억 2,500만 ~</div>
+                    <div class="model-tag">최상위 럭셔리 리무진 SUV</div>
+                </div>
+                <div class="summary-card">
+                    <div class="model-name">레인지로버 스포츠 (RRS)</div>
+                    <div class="model-price">1억 5,400만 ~</div>
+                    <div class="model-tag">다이내믹 럭셔리 퍼포먼스</div>
+                </div>
+                <div class="summary-card">
+                    <div class="model-name">레인지로버 벨라 (VELAR)</div>
+                    <div class="model-price">1억 0,200만 ~</div>
+                    <div class="model-tag">아방가르드 환원주의 디자인</div>
+                </div>
+                <div class="summary-card">
+                    <div class="model-name">레인지로버 이보크 (EVOQUE)</div>
+                    <div class="model-price">7,580만 ~</div>
+                    <div class="model-tag">도심형 콤팩트 프리미엄</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메인 본문 콘텐츠 -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- 서론 및 기본 개요 -->
+            <article class="content-block">
+                <h2>1. 2026년 랜지로버 SUV 가격 구조와 시장 포지셔닝</h2>
+                <div class="lead-text">
+                    포털 검색창에서 '랜지로버 suv 가격'을 검색하는 소비자들이 가장 궁금해하는 핵심은 과연 세부 트림별 출고 금액이 얼마이며, 취등록세와 1년 유지비를 합산한 총소요 비용이 예상 범위를 얼마나 초과하는지 여부입니다. 2026년 기준 랜드로버 코리아의 공식 프라이스 매트릭스는 환율 변동과 최신 인제니움 파워트레인 및 P550e PHEV 고전압 배터리 시스템 업그레이드로 인해 전년 대비 소폭 조정되었습니다.
+                </div>
+                <p>
+                    랜드로버의 기함인 레인지로버 브랜드는 크게 네 가지 핵심 세그먼트로 나뉩니다. 정점에 위치한 올 뉴 레인지로버(보그 후속의 플래그십 SWB 및 LWB 7인승/4인승 SV), 운전의 역동성을 극대화한 레인지로버 스포츠, 정제된 미니멀리즘을 표방하는 레인지로버 벨라, 그리고 엔트리 도심형 SUV인 레인지로버 이보크입니다. 수입 럭셔리 SUV 시장에서 가장 높은 감성 만족도와 오프로드 올 터레인 리스폰스 2 시스템을 겸비한 해당 라인업은 단순한 이동 수단을 넘어 하이엔드 라이프스타일의 상징으로 자리잡고 있습니다.
+                </p>
+                <p>
+                    본 가이드에서는 2026년도 신규 출고 기준 모델별 공식 가격표와 등급표, 그리고 다이렉트 현금 일시불 구입부터 12개월, 36개월, 60개월 운용리스 및 장기렌트 계약 시 적용되는 예상 견적, 부대비용 및 제세공과금을 체계적으로 계산하여 정리해 드립니다.
+                </p>
+
+                <!-- 탭 기반 모델별 상세 가격표 -->
+                <h3>2026 모델 라인업별 세부 가격표 및 등급표</h3>
+                <p>각 세그먼트 버튼을 선택하시면 트림별 배기량, 연료 방식, 공인 출고 가격 및 대표 옵션 구성을 즉시 비교 확인하실 수 있습니다.</p>
+
+                <div class="tab-navigation" role="tablist">
+                    <button class="tab-button active" onclick="openTab(event, 'tab-flagship')">올 뉴 레인지로버</button>
+                    <button class="tab-button" onclick="openTab(event, 'tab-sport')">레인지로버 스포츠</button>
+                    <button class="tab-button" onclick="openTab(event, 'tab-velar')">레인지로버 벨라</button>
+                    <button class="tab-button" onclick="openTab(event, 'tab-evoque')">레인지로버 이보크</button>
+                </div>
+
+                <!-- 플래그십 탭 -->
+                <div id="tab-flagship" class="tab-panel active">
+                    <h4>올 뉴 레인지로버 (스탠다드 휠베이스 SWB & 롱 휠베이스 LWB) 2026년형</h4>
+                    <div class="table-wrapper">
+                        <table class="luxury-data-table">
+                            <thead>
+                                <tr>
+                                    <th>세부 트림 명칭</th>
+                                    <th>파워트레인 규격</th>
+                                    <th>최고출력 / 토크</th>
+                                    <th>공식 출고 가격</th>
+                                    <th>취등록세(7% 예상)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>레인지로버 SWB D350 오토바이오그래피</td>
+                                    <td>3.0L 직렬 6기통 디젤 MHEV</td>
+                                    <td>350마력 / 71.4kg.m</td>
+                                    <td class="price-highlight">225,000,000원</td>
+                                    <td>15,750,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 SWB P530 오토바이오그래피</td>
+                                    <td>4.4L V8 가솔린 트윈터보</td>
+                                    <td>530마력 / 76.5kg.m</td>
+                                    <td class="price-highlight">246,000,000원</td>
+                                    <td>17,220,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 SWB P550e 오토바이오그래피</td>
+                                    <td>3.0L 6기통 + 38.2kWh PHEV</td>
+                                    <td>550마력 / 81.6kg.m</td>
+                                    <td class="price-highlight">255,000,000원</td>
+                                    <td>17,850,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 LWB D350 오토바이오그래피 (7인승)</td>
+                                    <td>3.0L 직렬 6기통 디젤 MHEV</td>
+                                    <td>350마력 / 71.4kg.m</td>
+                                    <td class="price-highlight">238,000,000원</td>
+                                    <td>16,660,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 LWB P530 오토바이오그래피 (7인승)</td>
+                                    <td>4.4L V8 가솔린 트윈터보</td>
+                                    <td>530마력 / 76.5kg.m</td>
+                                    <td class="price-highlight">259,000,000원</td>
+                                    <td>18,130,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 LWB P530 오토바이오그래피 (5인승)</td>
+                                    <td>4.4L V8 가솔린 트윈터보</td>
+                                    <td>530마력 / 76.5kg.m</td>
+                                    <td class="price-highlight">262,000,000원</td>
+                                    <td>18,340,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 LWB P550e 오토바이오그래피 (5인승)</td>
+                                    <td>3.0L 6기통 + 38.2kWh PHEV</td>
+                                    <td>550마력 / 81.6kg.m</td>
+                                    <td class="price-highlight">268,000,000원</td>
+                                    <td>18,760,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 LWB P530 SV 비스포크 (4인승 시그니처)</td>
+                                    <td>4.4L V8 가솔린 트윈터보 SV</td>
+                                    <td>615마력 / 76.5kg.m</td>
+                                    <td class="price-highlight">328,000,000원</td>
+                                    <td>22,960,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 LWB P615 SV 카멜 에디션</td>
+                                    <td>4.4L V8 하이퍼포먼스 가솔린</td>
+                                    <td>615마력 / 76.5kg.m</td>
+                                    <td class="price-highlight">345,000,000원</td>
+                                    <td>24,150,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 스포츠 탭 -->
+                <div id="tab-sport" class="tab-panel">
+                    <h4>올 뉴 레인지로버 스포츠 (Range Rover Sport) 2026년형</h4>
+                    <div class="table-wrapper">
+                        <table class="luxury-data-table">
+                            <thead>
+                                <tr>
+                                    <th>세부 트림 명칭</th>
+                                    <th>파워트레인 규격</th>
+                                    <th>최고출력 / 토크</th>
+                                    <th>공식 출고 가격</th>
+                                    <th>취등록세(7% 예상)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>레인지로버 스포츠 D300 다이내믹 HSE</td>
+                                    <td>3.0L 직렬 6기통 디젤 MHEV</td>
+                                    <td>300마력 / 66.3kg.m</td>
+                                    <td class="price-highlight">154,000,000원</td>
+                                    <td>10,780,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 스포츠 P360 다이내믹 SE</td>
+                                    <td>3.0L 직렬 6기통 가솔린 MHEV</td>
+                                    <td>360마력 / 51.0kg.m</td>
+                                    <td class="price-highlight">142,000,000원</td>
+                                    <td>9,940,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 스포츠 P360 다이내믹 HSE</td>
+                                    <td>3.0L 직렬 6기통 가솔린 MHEV</td>
+                                    <td>360마력 / 51.0kg.m</td>
+                                    <td class="price-highlight">158,000,000원</td>
+                                    <td>11,060,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 스포츠 P400 오토바이오그래피</td>
+                                    <td>3.0L 6기통 고출력 가솔린</td>
+                                    <td>400마력 / 56.1kg.m</td>
+                                    <td class="price-highlight">172,000,000원</td>
+                                    <td>12,040,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 스포츠 P550e 다이내믹 HSE (PHEV)</td>
+                                    <td>3.0L 가솔린 + 38.2kWh 플러그인</td>
+                                    <td>550마력 / 81.6kg.m</td>
+                                    <td class="price-highlight">187,000,000원</td>
+                                    <td>13,090,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 스포츠 SV 에디션 원 (Edition One)</td>
+                                    <td>4.4L V8 MHEV 트윈터보</td>
+                                    <td>635마력 / 76.5kg.m</td>
+                                    <td class="price-highlight">262,000,000원</td>
+                                    <td>18,340,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 벨라 탭 -->
+                <div id="tab-velar" class="tab-panel">
+                    <h4>레인지로버 벨라 (Range Rover Velar) 2026년형 페이스리프트</h4>
+                    <div class="table-wrapper">
+                        <table class="luxury-data-table">
+                            <thead>
+                                <tr>
+                                    <th>세부 트림 명칭</th>
+                                    <th>파워트레인 규격</th>
+                                    <th>최고출력 / 토크</th>
+                                    <th>공식 출고 가격</th>
+                                    <th>취등록세(7% 예상)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>레인지로버 벨라 P250 다이내믹 SE</td>
+                                    <td>2.0L 직렬 4기통 가솔린 터보</td>
+                                    <td>250마력 / 37.2kg.m</td>
+                                    <td class="price-highlight">102,000,000원</td>
+                                    <td>7,140,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 벨라 P250 다이내믹 HSE</td>
+                                    <td>2.0L 직렬 4기통 가솔린 터보</td>
+                                    <td>250마력 / 37.2kg.m</td>
+                                    <td class="price-highlight">114,000,000원</td>
+                                    <td>7,980,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 벨라 P400 다이내믹 HSE</td>
+                                    <td>3.0L 직렬 6기통 가솔린 MHEV</td>
+                                    <td>400마력 / 56.1kg.m</td>
+                                    <td class="price-highlight">127,000,000원</td>
+                                    <td>8,890,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 벨라 P400 오토바이오그래피</td>
+                                    <td>3.0L 6기통 하이엔드 럭셔리</td>
+                                    <td>400마력 / 56.1kg.m</td>
+                                    <td class="price-highlight">138,000,000원</td>
+                                    <td>9,660,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 이보크 탭 -->
+                <div id="tab-evoque" class="tab-panel">
+                    <h4>레인지로버 이보크 (Range Rover Evoque) 2026년형</h4>
+                    <div class="table-wrapper">
+                        <table class="luxury-data-table">
+                            <thead>
+                                <tr>
+                                    <th>세부 트림 명칭</th>
+                                    <th>파워트레인 규격</th>
+                                    <th>최고출력 / 토크</th>
+                                    <th>공식 출고 가격</th>
+                                    <th>취등록세(7% 예상)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>레인지로버 이보크 P250 S</td>
+                                    <td>2.0L 직렬 4기통 가솔린 터보</td>
+                                    <td>249마력 / 37.2kg.m</td>
+                                    <td class="price-highlight">75,800,000원</td>
+                                    <td>5,306,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 이보크 P250 다이내믹 SE</td>
+                                    <td>2.0L 직렬 4기통 가솔린 터보</td>
+                                    <td>249마력 / 37.2kg.m</td>
+                                    <td class="price-highlight">83,500,000원</td>
+                                    <td>5,845,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 이보크 P250 다이내믹 HSE</td>
+                                    <td>2.0L 직렬 4기통 가솔린 터보</td>
+                                    <td>249마력 / 37.2kg.m</td>
+                                    <td class="price-highlight">91,200,000원</td>
+                                    <td>6,384,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>레인지로버 이보크 P250 오토바이오그래피</td>
+                                    <td>2.0L 풀옵션 인디비주얼 팩</td>
+                                    <td>249마력 / 37.2kg.m</td>
+                                    <td class="price-highlight">96,800,000원</td>
+                                    <td>6,776,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 가격 분포 시각화 CSS 바 차트 -->
+                <div class="graph-container">
+                    <div class="graph-title">2026 랜지로버 SUV 주요 모델군별 가격대 스펙트럼 비교</div>
+                    <div class="graph-subtitle">단위: 만원 (공식 신차 출고 시작가 기준)</div>
+
+                    <div class="bar-item">
+                        <div class="bar-label-group">
+                            <span>레인지로버 이보크 (엔트리 콤팩트)</span>
+                            <span>7,580만 ~ 9,680만원</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 28%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar-item">
+                        <div class="bar-label-group">
+                            <span>레인지로버 벨라 (미드사이즈 럭셔리)</span>
+                            <span>10,200만 ~ 13,800만원</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar-item">
+                        <div class="bar-label-group">
+                            <span>레인지로버 스포츠 (다이내믹 퍼포먼스)</span>
+                            <span>14,200만 ~ 26,200만원</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar-item">
+                        <div class="bar-label-group">
+                            <span>올 뉴 레인지로버 플래그십 (SWB/LWB/SV)</span>
+                            <span>22,500만 ~ 34,500만원</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 인터랙티브 금융 및 실구매가 계산기 -->
+            <article class="content-block">
+                <h2>2. 실구매 견적 및 금융 상품 계산기</h2>
+                <p>
+                    차량 가격 외에도 등록 시 지자체에 납부하는 취등록세(7%), 공채 매입 할인비, 부대비용 및 금융 방식(현금, 운용리스, 할부, 장기렌트)에 따른 월 납입금을 사전에 계산해야 예산 초과를 방지할 수 있습니다. 아래 계산기를 통해 희망 차종과 선수금 비율, 약정 기간을 지정하여 예상 납입 금액을 즉시 산출해 보십시오.
+                </p>
+
+                <div class="calculator-box">
+                    <h3>2026 랜지로버 SUV 스마트 금융 계산기</h3>
+                    <p class="calc-subtext">선택하신 조건에 맞춘 예상 취등록세와 월 금융 요금제 금액을 시뮬레이션합니다.</p>
+
+                    <div class="calc-grid">
+                        <div class="calc-form-group">
+                            <label for="car-select">관심 모델 및 트림 선택</label>
+                            <select id="car-select" onchange="calculateQuote()">
+                                <option value="75800000">레인지로버 이보크 P250 S (7,580만원)</option>
+                                <option value="102000000">레인지로버 벨라 P250 다이내믹 SE (1억 200만원)</option>
+                                <option value="154000000">레인지로버 스포츠 D300 다이내믹 HSE (1억 5,400만원)</option>
+                                <option value="172000000">레인지로버 스포츠 P400 오토바이오그래피 (1억 7,200만원)</option>
+                                <option value="225000000" selected>레인지로버 SWB D350 오토바이오그래피 (2억 2,500만원)</option>
+                                <option value="246000000">레인지로버 SWB P530 오토바이오그래피 (2억 4,600만원)</option>
+                                <option value="255000000">레인지로버 SWB P550e PHEV (2억 5,500만원)</option>
+                                <option value="262000000">레인지로버 LWB P530 5인승 (2억 6,200만원)</option>
+                                <option value="328000000">레인지로버 LWB P530 SV 비스포크 (3억 2,800만원)</option>
+                            </select>
+                        </div>
+
+                        <div class="calc-form-group">
+                            <label for="finance-type">계약 금융 방식</label>
+                            <select id="finance-type" onchange="calculateQuote()">
+                                <option value="lease">운용리스 (사업자 비용처리 최적화)</option>
+                                <option value="rent">장기렌트 (보험료/세금 일체 포함)</option>
+                                <option value="loan">일반 할부 금융</option>
+                                <option value="cash">다이렉트 현금 일시불</option>
+                            </select>
+                        </div>
+
+                        <div class="calc-form-group">
+                            <label for="deposit-ratio">초기 선수금 (계약금 및 선납 비율)</label>
+                            <select id="deposit-ratio" onchange="calculateQuote()">
+                                <option value="0">0% (무보증 승인 조건)</option>
+                                <option value="0.1">10% (초기 부담 최소화)</option>
+                                <option value="0.2">20%</option>
+                                <option value="0.3" selected>30% (가장 보편적인 비율)</option>
+                                <option value="0.4">40% (월 납입금 최저 세팅)</option>
+                            </select>
+                        </div>
+
+                        <div class="calc-form-group">
+                            <label for="contract-period">약정 기간 설정</label>
+                            <select id="contract-period" onchange="calculateQuote()">
+                                <option value="12">12개월 (1년 단기 약정)</option>
+                                <option value="36">36개월 (3년 플랜)</option>
+                                <option value="48">48개월 (4년 플랜)</option>
+                                <option value="60" selected>60개월 (5년 최적 분할)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="button" class="calc-btn" onclick="calculateQuote()">상세 견적 즉시 계산하기</button>
+
+                    <div class="calc-result-display" id="quote-result">
+                        <div class="calc-result-row">
+                            <span>차량 기본 출고가</span>
+                            <span id="res-base-price">225,000,000원</span>
+                        </div>
+                        <div class="calc-result-row">
+                            <span>예상 취등록세 (공급가액의 7%)</span>
+                            <span id="res-tax-price">15,750,000원</span>
+                        </div>
+                        <div class="calc-result-row">
+                            <span>초기 납입 선수금</span>
+                            <span id="res-deposit-price">67,500,000원</span>
+                        </div>
+                        <div class="calc-result-row">
+                            <span>공채 및 부대비용 예상치</span>
+                            <span id="res-extra-fee">1,200,000원</span>
+                        </div>
+                        <div class="calc-result-row total-row">
+                            <span id="res-payment-label">예상 월 납입금 (운용리스 60개월 기준)</span>
+                            <span id="res-monthly-price">약 2,580,000원</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 모델별 장단점 및 차이점 비교 분석 -->
+            <article class="content-block">
+                <h2>3. 모델별 심층 장단점 및 파워트레인 차이점 분석</h2>
+                <p>
+                    레인지로버 패밀리를 구성하는 각 모델은 명확한 개발 철학과 타깃 고객층을 지니고 있습니다. 무작정 높은 등급의 차량을 선택하기보다는 개인의 주행 환경, 주차장 규격, 동승 인원수 및 법인 세제 혜택 유무를 면밀히 따져보아야 합니다.
+                </p>
+
+                <h3>올 뉴 레인지로버 플래그십 (보그 후속 L460)</h3>
+                <p>
+                    올 뉴 레인지로버는 메르세데스-마이바흐 GLS, 벤틀리 벤테이가와 직접 경쟁하는 세계 최고 수준의 럭셔리 SUV입니다. MLA-Flex(Modular Longitudinal Architecture) 플랫폼을 기반으로 제작되어 이전 세대 대비 차체 강성이 50% 향상되었으며, 후륜 조향 각도가 최대 7.3도에 달하는 올 휠 스티어링(All-Wheel Steering) 시스템이 전 트림 기본 탑재되어 5미터가 넘는 거대한 전장에도 불구하고 골목길 회전 반경이 소형 해치백 수준에 불과합니다.
+                </p>
+                <p>
+                    <strong>장점:</strong> 극상의 승차감을 구현하는 독립형 에어 서스펜션과 차체 기울임을 전자식으로 억제하는 48V 다이내믹 리스폰스 프로(Dynamic Response Pro), 헤드레스트 내장형 액티브 노이즈 캔슬링 메리디안 사운드 시스템이 선사하는 정숙성이 독보적입니다.
+                </p>
+                <p>
+                    <strong>단점:</strong> 높은 초기 차량 가격(2억 2천만원부터 시작)과 만만치 않은 감가상각 비용, 그리고 전폭 2,047mm에 이르는 차체 폭으로 인해 구형 아파트의 좁은 지하주차장 진출입이나 기계식 주차장 이용이 불가능하다는 점이 대표적 한계입니다.
+                </p>
+
+                <h3>레인지로버 스포츠 (L461)</h3>
+                <p>
+                    플래그십 레인지로버의 고급스러운 소재감을 계승하면서도 보다 운전자 중심의 스포티한 핸들링 특성을 강조한 모델입니다. 비스듬히 누운 윈드실드 라인과 쿠페 스타일의 날렵한 루프라인을 자랑하며, 다이내믹 서스펜션 튜닝을 통해 고속 와인딩 코스에서도 흔들림 없는 접지력을 과시합니다.
+                </p>
+                <p>
+                    <strong>장점:</strong> 플래그십 대비 약 7,000만원에서 8,000만원가량 저렴한 금액대로 랜드로버 특유의 압도적인 하차감을 누릴 수 있으며, 가솔린 P360, 고출력 P400, 고성능 SV 에디션까지 다양한 파워트레인 스펙트럼을 제공합니다.
+                </p>
+                <p>
+                    <strong>단점:</strong> 2열 레그룸이 플래그십 LWB 모델에 비해 상대적으로 타이트하여 성인 4인이 장시간 이동할 경우 의전용 쇼퍼드리븐 차량으로는 다소 아쉬움이 남을 수 있습니다.
+                </p>
+
+                <h3>레인지로버 벨라 및 이보크</h3>
+                <p>
+                    벨라는 아방가르드한 환원주의 미학을 극한으로 끌어올린 미드사이즈 크로스오버로, 매립형 플러시 도어 핸들과 군더더기 없는 실내 커브드 글래스 인포테인먼트가 특징입니다. 이보크는 랜드로버 패밀리 중 가장 콤팩트한 전장 4,371mm로 도심 주행 및 여성 운전자, 신혼부부에게 선호도가 매우 높습니다.
+                </p>
+                <p>
+                    <strong>장단점 비교:</strong> 벨라와 이보크는 진입 가격이 7,000만원에서 1억원 초반대로 형성되어 구매 장벽이 상대적으로 낮지만, 상위 플래그십과 같은 에어 서스펜션의 구름 같은 승차감이나 48V 능동형 안티롤 바의 강력한 롤 제어 능력은 일부 제한적으로 적용됩니다.
+                </p>
+
+                <!-- 주요 제원 및 스펙 비교표 -->
+                <div class="table-wrapper">
+                    <table class="luxury-data-table">
+                        <thead>
+                            <tr>
+                                <th>비교 항목</th>
+                                <th>올 뉴 레인지로버 SWB</th>
+                                <th>레인지로버 스포츠</th>
+                                <th>레인지로버 벨라</th>
+                                <th>레인지로버 이보크</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>전장 (길이)</td>
+                                <td>5,052 mm</td>
+                                <td>4,946 mm</td>
+                                <td>4,797 mm</td>
+                                <td>4,371 mm</td>
+                            </tr>
+                            <tr>
+                                <td>전폭 (너비)</td>
+                                <td>2,047 mm</td>
+                                <td>2,047 mm</td>
+                                <td>1,930 mm</td>
+                                <td>1,904 mm</td>
+                            </tr>
+                            <tr>
+                                <td>후륜 조향(All-Wheel Steering)</td>
+                                <td>기본 탑재 (최대 7.3도)</td>
+                                <td>기본 탑재 (트림별 차등)</td>
+                                <td>미적용</td>
+                                <td>미적용</td>
+                            </tr>
+                            <tr>
+                                <td>서스펜션 구조</td>
+                                <td>전자제어식 에어 서스펜션</td>
+                                <td>다이내믹 에어 서스펜션</td>
+                                <td>전자제어 코일/에어</td>
+                                <td>코일 스프링 서스펜션</td>
+                            </tr>
+                            <tr>
+                                <td>평균 공인 복합연비</td>
+                                <td>8.0 ~ 10.1 km/L</td>
+                                <td>8.4 ~ 10.4 km/L</td>
+                                <td>8.9 ~ 10.2 km/L</td>
+                                <td>8.9 ~ 9.4 km/L</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <!-- 프로모션, 커뮤니티 동향, 할인 팁 -->
+            <article class="content-block">
+                <h2>4. 할인 프로모션, 딜러 서비스 및 커뮤니티(보배드림, 펨코, 디시) 실구매 분석</h2>
+                <p>
+                    럭셔리 수입차 구매 시 소비자들이 가장 활발하게 정보를 교류하는 곳은 보배드림 국산/수입차 게시판, 에펨코리아(펨코) 자동차 갤러리, 디시인사이드 차갤 등입니다. 이들 커뮤니티의 실제 오너들의 내돈내산 출고기 및 성지 좌표 후기를 종합해 보면 랜드로버 딜러십의 프로모션 구조는 크게 공식 프로모션과 각 딜러사(KCC오토, 아주네트웍스, 천일오토모빌 등)별 비공식 현금지원 정책으로 양분됩니다.
+                </p>
+
+                <h3>공식 프로모션과 비공식 딜러 서비스의 차이점</h3>
+                <p>
+                    일반적으로 랜드로버 코리아는 본사 차원에서 플래그십 레인지로버에 대해 무리한 가격 인하 정책을 지양하고 브랜드 가치 방어에 집중합니다. 그러나 분기 마감 시점(3월, 6월, 9월, 12월)이나 페이스리프트 연식 변경을 앞둔 시점에는 특정 재고 물량에 대해 500만원에서 1,500만원 수준의 파이낸셜 특별 저리 이자 지원금 또는 취등록세 지원 이벤트가 집행되기도 합니다.
+                </p>
+                <p>
+                    또한 계약 체결 시 전시장 카마스터가 제공하는 딜러 혜택으로는 최고급 세라믹 틴팅(버텍스 900, 솔라가드 볼텍스IR 등), 프론트 범퍼 및 보닛 생활보호 PPF 시공, 신세계 상품권 또는 백화점 상품권 증정, 블랙박스 및 보조배터리 설치 등이 대표적입니다. 이때 터무니없이 높은 현금지원 페이백을 약속하며 계약금을 사설 계좌로 입금하라고 요구하는 비공식 중개업체는 사기 피해를 야기할 수 있으므로 반드시 정식 전시장의 법인 가상계좌로 계약금을 송금해야 합니다.
+                </p>
+
+                <h3>리스 승계와 중도해지 위약금 및 환불 규정</h3>
+                <p>
+                    초고가 수입 SUV는 법인 또는 개인사업자 명의로 운용리스를 진행하는 비중이 70%를 상회합니다. 리스는 연간 1,500만원 한도 내에서 감가상각비와 차량 유지비를 합법적으로 비용처리할 수 있는 장점이 있습니다. 그러나 사업 악화나 차종 교체로 인해 약정된 기간(36개월, 60개월 등)을 채우지 못하고 중도 계약을 해지할 경우 거액의 위약금이 발생합니다.
+                </p>
+                <p>
+                    중도해지 위약금은 통상 잔여 리스 원금의 10%에서 최대 35%에 달하므로, 계약을 강제 종료하고 차량을 반납하는 것보다는 보배드림이나 전문 리스 승계 플랫폼 어플을 통해 다른 사업자에게 승계 지원금을 일부 지원해주고 명의를 이전하는 '리스 승계' 방식을 취하는 것이 손실을 최소화하는 현명한 방법입니다.
+                </p>
+            </article>
+
+            <!-- 유지비, 소모품 보증, AI 컨설팅 -->
+            <article class="content-block">
+                <h2>5. 연간 유지비 시뮬레이션 및 AI 디지털 견적 컨설팅 활용법</h2>
+                <p>
+                    차량 출고 후 매년 지출되는 유류비, 자동차세, 정기 종합보험료, 소모품 교체 비용 등 유지비용을 예측하지 못하면 차량 유지에 큰 부담을 겪을 수 있습니다. 2026년 기준 레인지로버 D350(디젤)과 P530(가솔린 V8)의 연간 15,000km 주행 시 예상 유지비 총액을 비교 분석합니다.
+                </p>
+
+                <div class="table-wrapper">
+                    <table class="luxury-data-table">
+                        <thead>
+                            <tr>
+                                <th>유지비 세부 항목</th>
+                                <th>레인지로버 SWB D350 (디젤)</th>
+                                <th>레인지로버 SWB P530 (가솔린 V8)</th>
+                                <th>비고 및 산출 근거</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>연간 자동차세</td>
+                                <td>약 778,000원 (2,997cc)</td>
+                                <td>약 1,142,000원 (4,395cc)</td>
+                                <td>배기량 기준 표준 과세율 적용</td>
+                            </tr>
+                            <tr>
+                                <td>연간 유류비 (15,000km)</td>
+                                <td>약 2,400,000원 (경유 1,600원, 연비 10km/L)</td>
+                                <td>약 3,850,000원 (고급유 1,900원, 연비 7.4km/L)</td>
+                                <td>P530은 고옥탄가 고급휘발유 세팅 권장</td>
+                            </tr>
+                            <tr>
+                                <td>1년 자동차 보험료 (평균)</td>
+                                <td>약 2,800,000원</td>
+                                <td>약 3,400,000원</td>
+                                <td>30대 후반, 무사고 할인 기준 평균치</td>
+                            </tr>
+                            <tr>
+                                <td>엔진오일 및 소모품 (보증외)</td>
+                                <td>0원 (5년 서비스 플랜 무상 케어)</td>
+                                <td>0원 (5년 서비스 플랜 무상 케어)</td>
+                                <td>공식 출고 시 5년/10만km 보증 포함</td>
+                            </tr>
+                            <tr>
+                                <td>연간 고정 총비용</td>
+                                <td class="price-highlight">약 5,978,000원</td>
+                                <td class="price-highlight">약 8,392,000원</td>
+                                <td>월평균 약 50만 ~ 70만원 지출 예상</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>AI 검색 및 디지털 앱(토스, 카카오톡, 제미나이, 챗지피티)을 활용한 스마트 구매법</h3>
+                <p>
+                    과거에는 발품을 팔아 복수의 대리점을 직접 방문해야만 최적의 조건을 파악할 수 있었으나, 최근에는 핀테크 앱인 토스(Toss), 네이버 MY CAR, 카카오페이 자동차 서비스를 통해 다이렉트 자동차 금융 금리를 실시간으로 조회할 수 있습니다. 
+                </p>
+                <p>
+                    특히 제미나이(Gemini)나 챗지피티(ChatGPT)와 같은 생성형 AI 도구에 자신의 연간 소득, 법인 과세표준, 희망 차종(예: 레인지로버 스포츠 P360)과 계약 조건(선수금 30%, 60개월)을 프롬프트로 입력하면 가장 유리한 감가상각 상각비 계산과 연도별 세금 절감 견적을 즉각 도출할 수 있습니다. 유튜브나 인스타그램, 페이스북, 트위터(X), 텔레그램의 수입차 전문 채널을 통해 비공식 즉시 출고 재고 알림을 설정해 두는 것 또한 수개월에 달하는 대기 기간을 단축할 수 있는 핵심 노하우입니다.
+                </p>
+            </article>
+
+            <!-- 공인 외부 참고 자료 (요구조건 준수) -->
+            <div class="reference-resource-box">
+                <h3>공인된 신뢰성 있는 공식 참고 자료</h3>
+                <p>보다 공신력 있는 자동차 제원, 역사적 배경 및 기술 규격은 아래 공식 자료실을 통해 검증하실 수 있습니다.</p>
+                <ul class="reference-list">
+                    <li>
+                        <strong>1. 글로벌 럭셔리 SUV 프라이싱 분석 리서치:</strong>
+                        <a href="https://directvcheckb.koreahankang.com" target="_blank" rel="noopener noreferrer">
+                            reliabledone.com 럭셔리 SUV 통합 가격 및 감가율 통계 지표
+                        </a>
+                        - 주요 프리미엄 SUV 세그먼트별 실거래가 추이와 공인 감가상각률 빅데이터를 투명하게 제공합니다.
+                    </li>
+                    <li>
+                        <strong>2. 랜드로버 코리아 공식 웹사이트:</strong>
+                        <a href="https://www.landrover.co.kr" target="_blank" rel="noopener noreferrer">
+                            랜드로버 코리아 (Land Rover Korea) 공식 온라인 카탈로그 및 시승 신청
+                        </a>
+                        - 최신 2026 모델 연식별 공식 권장소비자가격(MSRP)과 나만의 레인지로버 만들기 가상 견적 시스템을 지원합니다.
+                    </li>
+                    <li>
+                        <strong>3. 레인지로버 백과사전 (나무위키):</strong>
+                        <a href="https://namu.wiki/w/%EB%A0%88%EC%9D%B8%EC%A7%80%EB%A1%9C%EB%B2%84" target="_blank" rel="noopener noreferrer">
+                            나무위키: 랜드로버 레인지로버 모델 역사와 세대별 기술 변천사
+                        </a>
+                        - 1세대 클래식부터 5세대 L460까지 이어져 내려온 레인지로버의 혈통과 플랫폼 기술 특징을 열람할 수 있습니다.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 자주 묻는 질문 FAQ -->
+            <article class="content-block">
+                <h2>6. 2026 랜지로버 SUV 자주 묻는 질문 (FAQ 10문 10답)</h2>
+                <div class="faq-accordion-group">
+
+                    <div class="faq-card">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span>Q1. 2026년식 레인지로버 구매 시 출고 대기 기간은 평균 얼마나 소요되나요?</span>
+                            <span class="faq-toggle-state">답변보기</span>
+                        </button>
+                        <div class="faq-body">
+                            A. 세부 트림과 옵션에 따라 큰 차이가 발생합니다. 스탠다드 모델인 레인지로버 스포츠 P360이나 벨라, 이보크의 경우 사전 배정 물량이 있는 경우 1개월에서 3개월 이내 즉시 출고가 가능합니다. 반면 올 뉴 레인지로버 LWB P530 7인승이나 SV 비스포크 에디션의 경우 전 세계적인 주문 적체와 맞춤 가죽 인디비주얼 인디오더로 인해 평균 6개월에서 최대 1년 이상의 출고 대기 기간이 예상됩니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span>Q2. 플래그십 레인지로버와 레인지로버 스포츠 중 패밀리카로 어느 쪽이 더 적합한가요?</span>
+                            <span class="faq-toggle-state">답변보기</span>
+                        </button>
+                        <div class="faq-body">
+                            A. 영유아 자녀가 있어 유모차 적재와 카시트 장착, 부모님의 승하차가 잦다면 광활한 2열 레그룸과 소프트 클로징, 전동식 사이드 스텝이 기본 탑재된 올 뉴 레인지로버(특히 7인승 LWB 모델)를 추천합니다. 반면 주말 가족 여행과 평일 출퇴근 운전의 다이내믹한 펀치력을 동시에 만끽하고자 하는 자가 운전자라면 레인지로버 스포츠가 비용 대비 만족도가 월등히 높습니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span>Q3. 플러그인 하이브리드(PHEV) P550e 모델의 실제 전기 주행거리와 충전 규격은 어떻게 되나요?</span>
+                            <span class="faq-toggle-state">답변보기</span>
+                        </button>
+                        <div class="faq-body">
+                            A. 2026년형 레인지로버 P550e는 38.2kWh 용량의 고전압 리튬이온 배터리를 탑재하여 환경부 공인 기준 1회 완충 시 순수 전기로만 약 100km 안팎을 주행할 수 있습니다. 완속 충전뿐만 아니라 수입 PHEV 차량 중에서는 드물게 50kW 급속 DC 콤보 충전을 지원하여 약 40분 만에 80%까지 충전이 가능하므로, 일상 도심 출퇴근에서는 기름 한 방울 쓰지 않는 전기차처럼 운용할 수 있습니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span>Q4. 법인차량 8,000만원 초과 연두색 번호판 부착 기준과 레인지로버의 상관관계는?</span>
+                            <span class="faq-toggle-state">답변보기</span>
+                        </button>
+                        <div class="faq-body">
+                            A. 정부의 고가 법인 승용차 사적 유용 방지 정책에 따라 출고가 8,000만원 이상의 법인 명의 리스, 렌트, 구매 차량은 연두색 전용 번호판 부착이 의무화되어 있습니다. 레인지로버 이보크 기본형 일부를 제외한 벨라, 스포츠, 플래그십 전 트림은 8,000만원을 훌쩍 넘어서기 때문에 법인 명의 등록 시 연두색 번호판이 발급됩니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span>Q5. 과거 랜드로버의 고질병으로 지적되던 잔고장과 전자계통 결함 이슈는 개선되었나요?</span>
+                            <span class="faq-toggle-state">답변보기</span>
+                        </button>
+                        <div class="faq-body">
+                            A. 신규 MLA-Flex 플랫폼으로 전환된 5세대 레인지로버 이후 최신 피비 프로(Pivi Pro) 인포테인먼트가 적용되면서 기존의 인포 멈춤 현상과 배터리 방전 버그가 대폭 해결되었습니다. 또한 EVA 2.0 전자식 차량 아키텍처를 통해 전장 시스템의 85개 제어 모듈이 OTA 무선 소프트웨어 업데이트를 지원하므로 서비스센터 방문 없이도 결함 로직이 원격 개선됩니다. 다만 복잡한 전자식 에어 서스펜션과 액티브 안티롤 바는 주기적인 하체 점검이 필수적입니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span>Q6. 현금 구매와 운용리스 중 어떤 방식이 감가상각 손실 방어에 더 유리한가요?</span>
+                            <span class="faq-toggle-state">답변보기</span>
+                        </button>
+                        <div class="faq-body">
+                            A. 2억원이 넘는 초고가 플래그십 SUV는 3년 후 잔존가치 하락폭이 일반 대중차보다 큽니다. 현금으로 일시불 구매할 경우 중고차 처분 시 시장 감가 리스크를 오롯이 개인이 떠안아야 하지만, 고잔가 보장형 운용리스를 이용하면 만기 시점에 중고 시세가 낮을 경우 차량을 금융사에 반납하여 감가 손실을 방어할 수 있으므로 리스가 심리적, 재무적으로 안정적입니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span>Q7. 무약정 또는 1년(12개월) 단기 렌트/리스 상품의 장단점은 무엇인가요?</span>
+                            <span class="faq-toggle-state">답변보기</span>
+                        </button>
+                        <div class="faq-body">
+                            A. 1년 약정 단기 상품은 조기 차량 기변이 잦거나 해외 출국, 신차 출고 대기 기간 동안 임시로 타고자 하는 분들에게 최적화되어 있습니다. 다만 일반적인 36개월이나 60개월 약정 대비 월 납입 요금이 20%에서 30%가량 높게 책정되며, 중도해지 시 잔여 기간에 대한 위약금 요율이 가파르게 적용된다는 단점이 있습니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span>Q8. 레인지로버 실내 최고급 옵션인 SV 비스포크 인디비주얼 프로그램은 무엇인가요?</span>
+                            <span class="faq-toggle-state">답변보기</span>
+                        </button>
+                        <div class="faq-body">
+                            A. 랜드로버의 특수차량 사업부인 SVO(Special Vehicle Operations)에서 주관하는 비스포크 맞춤 제작 프로그램으로, 최대 391가지 실내 색상 조합과 230가지 외장 컬러, 자수 이니셜 각인 및 리얼 세라믹 기어 노브를 커스터마이징할 수 있습니다. 시그니처 4인승 스위트 옵션 선택 시 2열 독립 릴랙스 전동 시트와 전동식 접이식 클럽 테이블, 냉장고가 탑재됩니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span>Q9. 다이렉트 자동차보험 가입 시 고가 수입차 인수 거절 문제가 발생할 수 있나요?</span>
+                            <span class="faq-toggle-state">답변보기</span>
+                        </button>
+                        <div class="faq-body">
+                            A. 네, 차량가액이 2억원을 초과하는 레인지로버 플래그십 및 스포츠 고출력 트림은 일부 다이렉트 보험사 시스템에서 자차(자기차량손해) 담보 자동 승인이 거절되거나 공동인수로 배정될 수 있습니다. 따라서 출고 전 수입차 전용 언더라이팅 상담 센터를 통해 복수의 보험사 인수 기준을 비교하고 대물 배상 한도를 최소 10억원 이상으로 넉넉하게 설정해야 합니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span>Q10. 디젤 D350과 가솔린 P530 중 장기 소유 목적이라면 어떤 모델을 선택해야 할까요?</span>
+                            <span class="faq-toggle-state">답변보기</span>
+                        </button>
+                        <div class="faq-body">
+                            A. 장거리 고속도로 주행이 잦고 1회 주유로 800km 이상의 넉넉한 주행 가능 거리를 원하신다면 직렬 6기통 인제니움 디젤 D350의 71.4kg.m에 달하는 견인 토크와 경제성이 유리합니다. 하지만 정차 시 미세한 진동조차 없는 실크 같은 감성과 8기통 특유의 웅장한 가속 필링, 도심 위주의 단거리 쇼퍼드리븐 환경을 고려하신다면 P530 가솔린 트윈터보 모델이 후회 없는 선택이 될 것입니다.
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- 연관 키워드 및 검색 태그 클라우드 -->
+            <article class="content-block">
+                <h2>7. 함께 많이 찾는 연관 검색어 및 모델별 키워드 모음</h2>
+                <p>
+                    소비자 및 전문 분석가들이 포털 사이트, SNS 및 자동차 정보 앱에서 함께 비교 검색하는 대표적인 질의어와 트림명 키워드 목록입니다.
+                </p>
+
+                <div class="tag-cloud">
+                    <span class="tag-pill">랜지로버 suv 가격</span>
+                    <span class="tag-pill">2026 레인지로버 가격표</span>
+                    <span class="tag-pill">레인지로버 보그 신형</span>
+                    <span class="tag-pill">레인지로버 LWB 7인승</span>
+                    <span class="tag-pill">레인지로버 SWB D350</span>
+                    <span class="tag-pill">레인지로버 P530 오토바이오그래피</span>
+                    <span class="tag-pill">레인지로버 P550e 플러그인하이브리드</span>
+                    <span class="tag-pill">레인지로버 SV 카멜 에디션</span>
+                    <span class="tag-pill">레인지로버 스포츠 D300 가격</span>
+                    <span class="tag-pill">레인지로버 스포츠 P360 다이내믹 SE</span>
+                    <span class="tag-pill">레인지로버 스포츠 P400 다이내믹 HSE</span>
+                    <span class="tag-pill">레인지로버 스포츠 SV 에디션원</span>
+                    <span class="tag-pill">레인지로버 벨라 P250 페이스리프트</span>
+                    <span class="tag-pill">레인지로버 벨라 P400 실구매가</span>
+                    <span class="tag-pill">레인지로버 이보크 P250 S 가격</span>
+                    <span class="tag-pill">레인지로버 이보크 다이내믹 SE</span>
+                    <span class="tag-pill">랜드로버 디펜더 110 가격비교</span>
+                    <span class="tag-pill">랜드로버 디스커버리 5인승 7인승</span>
+                    <span class="tag-pill">수입 럭셔리 SUV 순위 추천</span>
+                    <span class="tag-pill">레인지로버 취등록세 계산기</span>
+                    <span class="tag-pill">레인지로버 운용리스 비용처리</span>
+                    <span class="tag-pill">레인지로버 장기렌트 무보증</span>
+                    <span class="tag-pill">레인지로버 중고 감가상각률</span>
+                    <span class="tag-pill">보배드림 레인지로버 할인 후기</span>
+                    <span class="tag-pill">펨코 자동차갤 레인지로버 견적</span>
+                    <span class="tag-pill">디시 차갤 랜드로버 고질병</span>
+                    <span class="tag-pill">토스 자동차 시세 조회</span>
+                    <span class="tag-pill">제미나이 AI 신차 견적 컨설팅</span>
+                    <span class="tag-pill">챗지피티 리스 견적 비교</span>
+                    <span class="tag-pill">카카오톡 공식 딜러 상담 채널</span>
+                    <span class="tag-pill">네이버 마이카 신차 할인 성지</span>
+                    <span class="tag-pill">연두색 번호판 8천만원 기준</span>
+                    <span class="tag-pill">수입 대형 SUV 1년 유지비 계산</span>
+                    <span class="tag-pill">레인지로버 일렉트릭 EV 사전계약</span>
+                </div>
+            </article>
+
+        </div>
     </main>
-  </body>
-</html>
+
+    
+  
+    <!-- 프론트엔드 인터랙션 스크립트 -->
+    <script>
+        // 탭 전환 기능
+        function openTab(evt, tabId) {
+            const panels = document.querySelectorAll('.tab-panel');
+            panels.forEach(panel => panel.classList.remove('active'));
+
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        // FAQ 토글 기능
+        function toggleFaq(btn) {
+            const body = btn.nextElementSibling;
+            const state = btn.querySelector('.faq-toggle-state');
+            const isOpen = body.classList.contains('open');
+
+            if (isOpen) {
+                body.classList.remove('open');
+                body.style.display = 'none';
+                state.textContent = '답변보기';
+            } else {
+                body.classList.add('open');
+                body.style.display = 'block';
+                state.textContent = '답변닫기';
+            }
+        }
+
+        // 실구매가 및 금융 계산기 로직
+        function calculateQuote() {
+            const basePrice = parseInt(document.getElementById('car-select').value, 10);
+            const financeType = document.getElementById('finance-type').value;
+            const depositRatio = parseFloat(document.getElementById('deposit-ratio').value);
+            const period = parseInt(document.getElementById('contract-period').value, 10);
+
+            // 취등록세: 일반 승용차 7%
+            const acquisitionTax = Math.round(basePrice * 0.07);
+            // 선수금
+            const deposit = Math.round(basePrice * depositRatio);
+            // 잔여 원금
+            const principal = basePrice - deposit;
+
+            // 라벨 및 결과 렌더링
+            document.getElementById('res-base-price').textContent = basePrice.toLocaleString('ko-KR') + '원';
+            document.getElementById('res-tax-price').textContent = acquisitionTax.toLocaleString('ko-KR') + '원';
+            document.getElementById('res-deposit-price').textContent = deposit.toLocaleString('ko-KR') + '원';
+
+            const paymentLabel = document.getElementById('res-payment-label');
+            const paymentValue = document.getElementById('res-monthly-price');
+
+            if (financeType === 'cash') {
+                paymentLabel.textContent = '총 소요 출고 비용 (차량가 + 취등록세 + 부대비용)';
+                const totalCash = basePrice + acquisitionTax + 1200000;
+                paymentValue.textContent = totalCash.toLocaleString('ko-KR') + '원 (일시불)';
+            } else if (financeType === 'lease') {
+                // 운용리스: 잔존가치 35% 가정, 연이율 약 5.5% 적용 단순 시뮬레이션
+                const residualRate = 0.35;
+                const residualValue = basePrice * residualRate;
+                const depreciatedAmount = (basePrice - deposit) - residualValue;
+                const monthlyPrincipal = depreciatedAmount > 0 ? depreciatedAmount / period : 0;
+                const monthlyInterest = (principal + residualValue) * (0.055 / 12);
+                const monthlyLease = Math.round(monthlyPrincipal + monthlyInterest);
+
+                paymentLabel.textContent = '예상 월 리스료 (' + period + '개월 / 잔가 35% 기준)';
+                paymentValue.textContent = '약 ' + Math.max(monthlyLease, 650000).toLocaleString('ko-KR') + '원';
+            } else if (financeType === 'rent') {
+                // 장기렌트: 취등록세 및 자동차세, 보험료 포함 요율
+                const monthlyRent = Math.round(((basePrice - deposit) / period) * 1.25);
+                paymentLabel.textContent = '예상 월 렌트료 (' + period + '개월 / 세금 및 보험 일체 포함)';
+                paymentValue.textContent = '약 ' + monthlyRent.toLocaleString('ko-KR') + '원';
+            } else {
+                // 일반 할부 (연 5.2% 원리금 균등 분할 상환)
+                const monthlyRate = 0.052 / 12;
+                const monthlyLoan = Math.round((principal * monthlyRate * Math.pow(1 + monthlyRate, period)) / (Math.pow(1 + monthlyRate, period) - 1));
+                paymentLabel.textContent = '예상 월 할부금 (' + period + '개월 / 연 5.2% 기준)';
+                paymentValue.textContent = '약 ' + monthlyLoan.toLocaleString('ko-KR') + '원';
+            }
+        }
+
+        // 초기 계산 실행
+        window.addEventListener('DOMContentLoaded', () => {
+            calculateQuote();
+            // FAQ 기본 display none 세팅
+            document.querySelectorAll('.faq-body').forEach(el => el.style.display = 'none');
+        });
+    </script>
+  
